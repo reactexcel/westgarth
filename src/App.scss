@@ -1,6 +1,163 @@
-
 @import "./scss/accountInfo.scss";
 @import "./scss/navbar.scss";
-body{
-    background-color: #E7E7E7;
+body {
+  background-color: rgb(249, 245, 234);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo {
+  img {
+    width: 100%;
+  }
+}
+
+.text-light-brown {
+  color: #b6a576;
+}
+
+.bg-light-brown {
+  background: #b6a576;
+}
+
+a {
+  color: #b6a576;
+}
+
+.bg-grey {
+  background: #e7e7e7;
+}
+
+.bg-grey-dark {
+  background: #b8b8b8;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.input-btn {
+  box-shadow: 10px 10px 7px 0px #f7f7f7;
+  border: 1px solid #e7e7e7;
+  height: 30px;
+  padding-left: 20px;
+}
+
+.input-search {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 10px 10px 7px 0px #f7f7f7;
+  border: 1px solid #e7e7e7;
+  height: 30px;
+  padding-left: 20px;
+  font-size: 14px;
+  margin-left: 10px;
+  outline: none;
+  width: 350px;
+}
+
+.input-select {
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  box-shadow: 10px 10px 7px 0px #f7f7f7;
+  border: 1px solid #e7e7e7;
+  height: 30px;
+  padding-left: 20px;
+  font-size: 14px;
+  margin-left: 10px;
+  min-width: 100px;
+}
+
+th {
+  font-weight: 500;
+}
+.pagination {
+  justify-content: center;
+}
+.page-link {
+  background: none;
+  color: #b6a576;
+  border: 0;
+  outline: none;
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+.page-link:hover {
+  background: none;
+  color: #b6a576;
+  box-shadow: none;
+}
+
+.form-wrapper {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.form-label {
+  font-size: 14px;
+  color: black;
+}
+
+.mobile-filter {
+  background: #b6a576;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  min-width: 150px;
+}
+.close-mobile-filter {
+  font-weight: 400;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mobile-invoice-title {
+  font-weight: 500;
+}
+
+.hr-thick {
+  height: 3px;
+  border: none;
+  background: #e7e7e7;
+}
+.hr-short {
+  width: 80%;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    text-align: center;
+    img {
+      width: 200px;
+    }
+  }
+  .page-title {
+    font-size: 2em;
+    font-weight: 300;
+  }
+  .priority-1 {
+    display: none;
+  }
+  .bg-sm-none {
+    background-color: rgb(249, 245, 234);
+  }
+  .pagination {
+    text-transform: uppercase;
+    justify-content: space-around;
+    font-weight: 500;
+  }
+  .input-filters {
+    width: 100%;
+    align-items: center;
+  }
+  .input-search {
+    width: calc(100% - 40px);
+    box-shadow: none;
+    height: 40px;
+  }
 }
